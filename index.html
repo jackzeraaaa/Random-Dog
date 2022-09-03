@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cachorros.png</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="apifetch.js"></script>
 </head>
 <body>
     <main>
         <div class="dog-pic">
+            <div class="loading-circle invisible">
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+
             <img src="dog.png" alt="Generic random picture of a dog">
         </div>
-        <button>Generate random dog</button>
+
+        <div class="button" onclick="generateDog()">
+            <button>Generate random dog</button>
+        </div>
     </main>
 </body>
 </html>
