@@ -6,6 +6,7 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     user-select: none;
+    color: #5eb1d4;
 }
 
 body{
@@ -51,6 +52,13 @@ main .button{
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+main .button:active{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+  transform: translate(1px, 1px);
+}
+
+
 
 main .button button{
     font-size: 1rem;
