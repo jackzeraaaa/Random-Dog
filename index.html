@@ -7,7 +7,7 @@
     <title>Random Dogs</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="doge.ico" type="image/x-icon">
-    <script src="apifetch.js"></script>
+    <script src="apifetch.js" defer></script>
 </head>
 <body>
     <main>
@@ -19,9 +19,15 @@
             <img src="dog.png" alt="Generic random picture of a dog">
         </div>
 
-        <div class="button" onclick="generateDog()">
-            <button>Generate random dog</button>
+        <div class="generators">
+            <div class="button-dog">
+                <button onclick="generateDog()">Generate random dog</button>
+            </div>
+            <div class="button-dog button-cat">
+                <button onclick="generateCat()">I prefer cats.</button>
+            </div>
         </div>
+
     </main>
 </body>
 </html>
