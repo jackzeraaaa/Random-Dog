@@ -17,7 +17,7 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -50,9 +50,9 @@ main .dog-pic img{
 main .generators{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+  padding: 10px;
 }
-
 
 main .generators .button-dog{
     border-radius: 18px;
@@ -62,7 +62,7 @@ main .generators .button-dog{
 
 main .generators .button-dog:active{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
-  transform: translate(1px, 1px);
+  transform: translate(2px, 2px);
 }
 
 main .generators .button-dog button{
@@ -105,6 +105,12 @@ main .generators .button-dog button::after{
 
 main .generators .button-dog button:hover::after{
     width: 100%;
+}
+
+main .generators .button-cat{
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* LOADING CIRCLE */
